@@ -56,9 +56,9 @@ window.addEventListener('load', function () {
     }, 800);
 
     //延迟加载音乐播放器
-    let element = document.createElement("script");
-    element.src = "./js/music.js";
-    document.body.appendChild(element);
+    // let element = document.createElement("script");
+    // element.src = "./js/music.js";
+    // document.body.appendChild(element);
 
     //中文字体缓加载-此处写入字体源文件 （暂时弃用）
     //先行加载简体中文子集，后续补全字集
@@ -81,16 +81,16 @@ setTimeout(function () {
 }, 3000);
 
 // 新春灯笼 （ 需要时可取消注释 ）
-new_element=document.createElement("link");
-new_element.setAttribute("rel","stylesheet");
-new_element.setAttribute("type","text/css");
-new_element.setAttribute("href","./css/lantern.css");
-document.body.appendChild(new_element);
+// new_element=document.createElement("link");
+// new_element.setAttribute("rel","stylesheet");
+// new_element.setAttribute("type","text/css");
+// new_element.setAttribute("href","./css/lantern.css");
+// document.body.appendChild(new_element);
 
-new_element=document.createElement("script");
-new_element.setAttribute("type","text/javascript");
-new_element.setAttribute("src","./js/lantern.js");
-document.body.appendChild(new_element);
+// new_element=document.createElement("script");
+// new_element.setAttribute("type","text/javascript");
+// new_element.setAttribute("src","./js/lantern.js");
+// document.body.appendChild(new_element);
 
 //获取一言
 fetch('https://v1.hitokoto.cn?max_length=24')
@@ -396,21 +396,21 @@ color: rgb(244,167,89);
 let styleContent = `
 color: rgb(30,152,255);
 `
-let title1 = '無名の主页'
+let title1 = '白露の主页'
 let title2 = `
- _____ __  __  _______     ____     __
-|_   _|  \\/  |/ ____\\ \\   / /\\ \\   / /
-  | | | \\  / | (___  \\ \\_/ /  \\ \\_/ / 
-  | | | |\\/| |\\___ \\  \\   /    \\   /  
- _| |_| |  | |____) |  | |      | |   
-|_____|_|  |_|_____/   |_|      |_|                                                     
+     ________   ______     ______      _____     
+    |_   __  | |_   _ '.  |_   _ \    |_   _|    
+      | |_ \\_|   | | '. \\   | |_) |     | |      
+      |  _|      | |  | |   |  __'.     | |   _  
+     _| |_      _| |_.' /  _| |__) |   _| |__/ | 
+    |_____|    |______.'  |_______/   |________|                                                
 `
 let content = `
-版 本 号：3.4
-更新日期：2022-07-24
+版 本 号：1.0
+更新日期：2024-04-22
 
-主页:  https://www.imsyy.top
-Github:  https://github.com/imsyy/home
+主页:  https://fdbl.eu.org
 `
+// Github:  https://github.com/imsyy/home
 console.log(`%c${title1} %c${title2}
 %c${content}`, styleTitle1, styleTitle2, styleContent)
