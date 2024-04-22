@@ -2,7 +2,7 @@
 /* 自定义配置 */
 /* 尚未完善 */
 $(function () {
-    let url = "../setting.json";
+    let url = "setting.json";
     $.getJSON(
         url,function (data) {
             /* 页头数据 */
@@ -12,20 +12,20 @@ $(function () {
             $("meta[name='keywords']").attr('content', data.keywords);
             $("meta[name='author']").attr('content', data.author);
             /* 基础信息 */
-            $("#logo-img").attr("src", data.logo_img);
+            //$("#logo-img").attr("src", data.logo_img);
             $('#logo-text-1').html(data.logo_text_1);
-            $('#logo-text-2').html("." + data.logo_text_2);
-            $('#logo-title-other').html(data.logo_text_1);
-            $('#logo-title-other-small').html("." + data.logo_text_2);
-            $('#logo-text-small').html(data.logo_text_1 + "." + data.logo_text_2);
+            $('#logo-text-2').html("" + data.logo_text_2);
+            //$('#logo-title-other').html(data.logo_text_1);
+            //$('#logo-title-other-small').html("." + data.logo_text_2);
+            $('#logo-text-small').html(data.logo_text_1 + "" + data.logo_text_2);
             /* 社交链接 */
-            $('#github').attr('href', "https://github.com/" + data.github);
+            /*$('#github').attr('href', "https://github.com/" + data.github);
             $('#qq').attr('href', "https://wpa.qq.com/msgrd?v=3&uin=" + data.qq + "&site=qq&menu=yes");
             $('#email').attr('href', "mailto:" + data.email);
             $('#bilibili').attr('href', "https://space.bilibili.com/" + data.bilibili);
-            $('#telegram').attr('href', "https://t.me/" + data.telegram);
+            $('#telegram').attr('href', "https://t.me/" + data.telegram);*/
             /* 快捷链接 */
-            $('#link-url-1').attr('href', data.link_1[0]);
+            /*$('#link-url-1').attr('href', data.link_1[0]);
             $('#link-icon-1').attr('class', data.link_1[1]);
             $('#link-name-1').html(data.link_1[2]);
             $('#link-url-2').attr('href', data.link_2[0]);
@@ -42,10 +42,10 @@ $(function () {
             $('#link-name-5').html(data.link_5[2]);
             $('#link-url-6').attr('href', data.link_6[0]);
             $('#link-icon-6').attr('class', data.link_6[1]);
-            $('#link-name-6').html(data.link_6[2]);
+            $('#link-name-6').html(data.link_6[2]);*/
             //页脚版权
-            $('#power-text').html(data.Copyright_text);
-            $('#beian').html("&amp;&nbsp;" + data.beian);
+            /*$('#power-text').html(data.Copyright_text);
+            $('#beian').html("&amp;&nbsp;" + data.beian);*/
         }
     )
 });
@@ -75,8 +75,8 @@ function getBgImg() {
 let bg_img_preinstall = {
     "type": "1", // 1:默认背景 2:每日一图 3:随机风景 4:随机动漫
     "2": "https://api.dujin.org/bing/1920.php", // 每日一图
-    "3": "https://api.ixiaowai.cn/gqapi/gqapi.php", // 随机风景
-    "4": "https://api.ixiaowai.cn/api/api.php" // 随机动漫
+    "3": "https://api.btstu.cn/sjbz/api.php", // 随机风景
+    "4": "https://www.dmoe.cc/random.php" // 随机动漫
 };
 
 // 更改背景图片
