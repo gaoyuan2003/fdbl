@@ -4,29 +4,38 @@
 <head>
     <!-- 基础信息 -->
     <meta charset="utf-8">
+    <!-- 请求的url是静态的html页面 -->
     <meta http-equiv="Access-Control-Allow-Origin" content="*">
     <!-- 强制 HTTPS，若不需要可删除，但可能出现问题 -->
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+    <!-- 指定浏览器渲染模式为 WebKit 内核 -->
     <meta name="renderer" content="webkit" />
+    <!-- 指定IE浏览器使用最新的渲染引擎并在Chrome Frame下打开，确保最佳的兼容性 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- 指定浏览器强制使用 WebKit 内核进行渲染 -->
     <meta name="force-rendering" content="webkit" />
+    <!-- 指定页面的视口设置，使页面在移动设备上具有良好的显示效果，宽度等于设备宽度，并且初始缩放比例为1 -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 指定浏览器工具栏的主题颜色 -->
     <meta name="theme-color" content="#424242" />
+    <!-- 页面的描述内容，通常用于搜索引擎结果中的摘要显示 -->
     <meta name="description" content="一个默默无闻的主页">
+    <!-- 页面的关键词，通常用于搜索引擎的关键词匹配 -->
     <meta name="keywords" content="白露,个人主页">
+    <!-- 页面的作者信息 -->
     <meta name="author" content="白露">
     <title>枫丹白露</title>
     <!-- jQuery -->
+    <!-- <script src="https://apps.bdimg.com/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <script src="./myjs/jquery.min.js"></script>
     <!-- HarmonyOS Sans -->
     <!-- 本站 CDN 已开启防盗链，非本站域名不可访问，请更改链接为下方内容，否则自定义字体将失效 -->
     <!-- https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css -->
 	<!-- https://cdn.imsyy.top/gh/imsyy/file/font/HarmonyOS_Sans/regular.min.css -->
-<!--     <link rel="stylesheet" href="./myjs/regular.css"/> -->
-<!-- 	<link rel="stylesheet" href="https://cdn.imsyy.top/gh/imsyy/file/font/HarmonyOS_Sans/regular.min.css"/> -->
+    <!-- <link rel="stylesheet" href="./myjs/regular.css"/> -->
+    <!-- <link rel="stylesheet" href="https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css"/> -->
     <!-- 引入样式 -->
-    <link rel="stylesheet" type="text/css"
-        href="./myjs/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./mycss/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/mobile.css">
     <link rel="stylesheet" type="text/css" href="./css/loading.css">
@@ -34,19 +43,19 @@
     <link rel="icon" href="./favicon.ico">
     <link rel="apple-touch-icon" href="./img/icon/apple-touch-icon.png">
     <!-- Izitoast -->
-    <link rel="stylesheet" href="./myjs/iziToast.min.css">
-    <script type="text/javascript"
-        src="./myjs/iziToast.min.js">
-    </script>
+    <link rel="stylesheet" href="./mycss/iziToast.min.css">
+    <script type="text/javascript" src="./myjs/iziToast.min.js"></script>
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-	<!-- <link rel="stylesheet" href="./myjs/all.min.css"> -->
+	<!-- <link rel="stylesheet" href="./fontawesome/css/all.min.css"> -->
     <!-- Aplayer -->
-    <link rel="stylesheet" href="./myjs/APlayer.min.css"
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./mycss/APlayer.min.css">
+    <script src="./myjs/APlayer.min.js"></script>
+    <!-- <link rel="stylesheet" href="./mycss/APlayer.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./myjs/APlayer.min.js" crossorigin="anonymous"
-        referrerpolicy="no-referrer"></script>
+        referrerpolicy="no-referrer"></script> -->
     <!-- <script src="./js/Meting.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- 检测用户的浏览器是否为 Internet Explorer 浏览器 -->
     <!-- IE Out -->
     <script>
         if ( /*@cc_on!@*/ false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href =
@@ -97,7 +106,7 @@
 <!--                                 <img id="logo-img" src="https://www.iculture.cc/icon/logo.png" alt="img"> -->
 								<!-- <img id="logo-img" src="./favicon.ico" alt="img"> -->
                                 <div class="img-title">
-                                    <span class="img-title-big" id="logo-text-1">fengdan</span>   <!-- FancyPig -->
+                                    <span class="img-title-big" id="logo-text-1">Mine</span>   <!-- FancyPig -->
                                     <span class="img-text" id="logo-text-2">'s blog</span>
                                 </div>
                             </div>
@@ -112,22 +121,22 @@
                             </div>
                             <!--社交链接-->
                             <div class="social" id="social">
-                                <a href="#" class="link" id="github" style="margin-left: 4px"
+                                <a href="" class="link" id="github" style="margin-left: 4px"
                                     target="_blank">
                                     <i class="fa-brands fa-github"></i>
                                 </a>
-                                <a href="#" class="link"
+                                <a href="" class="link"
                                     id="qq" target="_blank">
                                     <i class="fa-brands fa-qq"></i>
                                 </a>
-                                <a href="mailto:3103523312@qq.com" class="link" id="email">
+                                <a href="" class="link" id="email">
                                     <i class="fa-solid fa-envelope"></i>
                                 </a>
-                                <a href="https://space.bilibili.com" class="link" id="bilibili"  
+                                <a href="" class="link" id="bilibili"  
                                     target="_blank">
                                     <i class="fa-brands fa-bilibili"></i>
                                 </a>
-                                <a href="https://t.me/" class="link" id="telegram" target="_blank">
+                                <a href="" class="link" id="telegram" target="_blank">
                                     <i class="fa-brands fa-telegram"></i>
                                 </a>
                                 <a id="link-text">通过这里联系我</a>
@@ -154,7 +163,7 @@
                                         <div class="hitokoto-all">
                                             <div class="hitokoto-text"><span id="hitokoto_text">每一个人都应该明确自己的方向和位置</span>
                                             </div>
-                                            <div class="hitokoto-from">-「&nbsp;<span id="from_text">猪猪</span>&nbsp;」
+                                            <div class="hitokoto-from">-「&nbsp;<span id="from_text">白露</span>&nbsp;」
                                             </div>
                                         </div>
                                     </div>
@@ -213,7 +222,7 @@
                                 <!--第一组-->
                                 <div class="row">
                                     <div class="col">
-                                        <a id="link-url-1" href="#" target="_blank">
+                                        <a id="link-url-1" href="" target="_blank">
                                             <div class="link-card cards">
                                                 <i id="link-icon-1" class="fa-solid fa-blog"></i>
                                                 <span class="link-name" id="link-name-1">博客</span>
@@ -221,7 +230,7 @@
                                         </a>
                                     </div>
                                     <div class="col 2">
-                                        <a id="link-url-2" href="#" target="_blank">
+                                        <a id="link-url-2" href="" target="_blank">
                                             <div class="link-card cards">
                                                 <i id="link-icon-2" class="fa-solid fa-cloud"></i>
                                                 <span class="link-name" id="link-name-2">网盘</span>
@@ -229,7 +238,7 @@
                                         </a>
                                     </div>
                                     <div class="col">
-                                        <a id="link-url-3" href="#" target="_blank">
+                                        <a id="link-url-3" href="" target="_blank">
                                             <div class="link-card cards">
                                                 <i id="link-icon-3" class="fa-solid fa-music"></i>
                                                 <span class="link-name" id="link-name-3">音乐</span>
@@ -240,7 +249,7 @@
                                 <!--第二组-->
                                 <div class="row" style="margin-top: 1.5rem;">
                                     <div class="col">
-                                        <a id="link-url-4" href="#" target="_blank">
+                                        <a id="link-url-4" href="" target="_blank">
                                             <div class="link-card cards">
                                                 <i id="link-icon-4" class="fa-solid fa-compass"></i>
                                                 <span class="link-name" id="link-name-4">软件</span>
@@ -248,7 +257,7 @@
                                         </a>
                                     </div>
                                     <div class="col 2">
-                                        <a id="link-url-5" href="#" target="_blank">
+                                        <a id="link-url-5" href="" target="_blank">
                                             <div class="link-card cards">
                                                 <i id="link-icon-5" class="fa-solid fa-book-bookmark"></i>
                                                 <span class="link-name" id="link-name-5">源码</span>
@@ -256,7 +265,7 @@
                                         </a>
                                     </div>
                                     <div class="col">
-                                        <a id="link-url-6" href="#" target="_blank">
+                                        <a id="link-url-6" href="" target="_blank">
                                             <div class="link-card cards">
                                                 <i id="link-icon-6" class="fa-solid fa-flask"></i>
                                                 <span class="link-name" id="link-name-6">社区</span>
@@ -319,21 +328,21 @@
                     <!--网站链接-->
                     <div class="row">
                         <div class="col">
-                            <a href="#" target="_blank">
+                            <a href="" target="_blank">
                                 <div class="link-card cards">
                                     <span class="link-name">通知群</span>
                                 </div>
                             </a>
                         </div>
                         <div class="col 2">
-                            <a href="#" target="_blank">
+                            <a href="" target="_blank">
                                 <div class="link-card cards">
                                     <span class="link-name">在线工具</span>
                                 </div>
                             </a>
                         </div>
                         <div class="col">
-                            <a href="#" target="_blank">
+                            <a href="" target="_blank">
                                 <div class="link-card cards">
                                     <span class="link-name">签到助手</span>
                                 </div>
@@ -342,14 +351,14 @@
                     </div>
                     <div class="row" style="margin-top: 1.5rem;">
                         <div class="col">
-                            <a href="#" target="_blank">
+                            <a href="" target="_blank">
                                 <div class="link-card cards">
                                     <span class="link-name">羊了个羊</span>
                                 </div>
                             </a>
                         </div>
                         <div class="col 2">
-                            <a href="#" target="_blank">
+                            <a href="" target="_blank">
                                 <div class="link-card cards">
                                     <span class="link-name">召唤神龙</span>
                                 </div>
@@ -374,10 +383,10 @@
                         <!--左侧内容-->
                         <div class="box-left">
                             <div class="img-title">
-                                <span class="img-title-big" id="logo-title-other">iculture</span>
-                                <span class="img-text" id="logo-title-other-small">.cc</span><br />
-                                <span class="img-text">&nbsp;v&nbsp;3.3</span>
-                                <a href="#" target="_blank">
+                                <span class="img-title-big" id="logo-title-other">fdbl</span>
+                                <span class="img-text" id="logo-title-other-small">.eu.org</span><br />
+                                <span class="img-text">&nbsp;v&nbsp;1.0</span>
+                                <a href="" target="_blank">
                                     <i class="fa-brands fa-github"></i>
                                 </a>
                             </div>
@@ -487,24 +496,24 @@
                 <!-- 以下信息请不要修改哦 -->
                 <!-- <span id="made">&amp;&nbsp;Designed&nbsp;by&nbsp;<a href="#"
                         target="_blank">枫丹白露</a></span> -->
-                <span id="made">&amp;&nbsp;Designed&nbsp;by&nbsp;<a href="#"
+                <span id="made">&amp;&nbsp;Designed&nbsp;by&nbsp;<a href=""
                     target="_blank">me</a></span>
                 <!-- 站点备案 -->
 <!--                 <a href="#" id="beian" target="_blank">&amp;&nbsp;京ICP备17068217号-1</a> -->
-		    <a href="#" id="beian" target="_blank">&amp;&nbsp;欢迎访问</a>
+		    <a href="" id="beian" target="_blank">&amp;&nbsp;欢迎访问</a>
             </div>
             <!-- 歌词显示 -->
             <div id="lrc"></div>
         </footer>
     </section>
     <!-- sw.js -->
-    <script>
+     <script>
         if ("serviceWorker" in navigator) {
             window.addEventListener("load", function () {
                 navigator.serviceWorker.register("sw.js");
             });
         }
-    </script>
+    </script> -->
     <!-- noscript -->
     <noscript>
         <div class="noscript fixed-top">请开启 JavaScript</div>
@@ -514,9 +523,7 @@
     <script type="text/javascript" src="./js/set.js"></script>
     <script type="text/javascript" src="./js/time.js"></script>
     <script type="text/javascript" src="./js/js.cookie.js"></script>
-    <script type="text/javascript"
-        src="./myjs/bootstrap.min.js">
-    </script>
+    <script type="text/javascript" src="./myjs/bootstrap.min.js"></script>
 </body>
 
 </html>

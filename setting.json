@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
 	"title": "枫丹白露",
 	"description": "一个默默无闻的主页",
 	"keywords": "白露,个人主页",
@@ -40,45 +39,3 @@
 	"Copyright_year": "2020",
 	"Copyright_text": "無名"
 }
-=======
-    "title": "猪猪の主页",
-    "description": "一个默默无闻的主页",
-    "keywords": "無名,个人主页",
-    "author": "無名",
-    "logo_img": "https://www.iculture.cc/icon/logo.png",
-    "logo_text_1": "Fdbl",
-    "logo_text_2": ".eu.org",
-    "des_title": [
-        "Hello World !",
-        "一个建立于 21 世纪的小站，存活于互联网的边缘"
-    ],
-    "des_title_change": [
-        "Oops !", //站点介绍标题点击后文字
-        "哎呀，这都被你发现了 ( 再点击一次可关闭 )"
-    ],
-    "github": "imsyy",
-    "qq": "1539250352",
-    "email": "one@imsyy.top",
-    "telegram": "bottom_user",
-    "twitter": "iimmsyy",
-    "weather_api": "https://www.yiketianqi.com",
-    "link_1": [
-        "https://blog.imsyy.top/",
-        "fa-solid fa-blog",
-        "博客"
-    ],
-    "link_2": [
-        "https://drive.imsyy.top/",
-        "fa-solid fa-cloud",
-        "网盘"
-    ],
-    "wallpaper_api": [
-        [
-            "每日一图",
-            "https://api.dujin.org/bing/1920.php"
-        ]
-    ],
-    "Copyright_year": "2020",
-    "Copyright_text": "無名"
-}
->>>>>>> a35eb7dba0b36bf2744694bb62217c05dc1b27db
