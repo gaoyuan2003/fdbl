@@ -374,11 +374,16 @@ $("#more").hover(function () {
 
 //屏蔽右键
 document.oncontextmenu = function () {
+    // iziToast.show({
+    //     timeout: 2000,
+    //     icon: "fa-solid fa-circle-exclamation",
+    //     message: '为了浏览体验，本站禁用右键'
+    // });
     iziToast.show({
-        timeout: 2000,
-        icon: "fa-solid fa-circle-exclamation",
-        message: '为了浏览体验，本站禁用右键'
-    });
+    timeout: 2000,
+    icon: 'icon-font',
+    message: '<i class="fas fa-exclamation-circle"></i> 为了浏览体验，本站禁用右键'
+});
     return false;
 }
 
