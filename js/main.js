@@ -382,15 +382,6 @@ document.oncontextmenu = function () {
     return false;
 }
 
-function fd() {
-    iziToast.show({
-        timeout: 2000,
-        icon: "fa-solid fa-circle-exclamation",
-        message: '右键'
-    });
-    return false;
-}
-
 //控制台输出
 //console.clear();
 let styleTitle1 = `
